@@ -2,18 +2,38 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Usuario</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <%- include('partials/head') %>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Agregar el estilo para el campo deshabilitado -->
+    <style>
+        .input-disabled {
+            background-color: rgb(18, 18, 209);  /* Fondo azul */
+            color: white;  /* Texto blanco */
+            cursor: not-allowed;  /* Cambiar el cursor para indicar que no es editable */
+        }
+    </style>
+
 </head>
 <body>
-    <div class="menu-container">
-        <h1>Bienvenido, <%= usuario %>!</h1>
-        <p>Selecciona una opción:</p>
+    <script src="server.js"></script>
+    <%- include('partials/navigation') %>  
+    <div class="register-form30"> 
+        <h4>- 
+            ACTIVOS FIJOS - </h4>
+    </div>
+    <p></p>
+    <div class="register-form30">
         <ul>
-            <li><a href="#">Opción 1</a></li>
-            <li><a href="#">Opción 2</a></li>
-            <li><a href="#">Opción 3</a></li>
+            <li><a href="#">Inventarios</a></li>
+            <li><a href="#">Consultar</a></li>
+            <li><a href="#">Validar</a></li>
         </ul>
         <a href="/logout">Cerrar sesión</a>
     </div>

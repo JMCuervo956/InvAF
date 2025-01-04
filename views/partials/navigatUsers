@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg custom-navbar-bg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">A S A M B L E A  - 2025 </a>   
+<!--    <a class="navbar-brand" href="/">Central Parking System  -  ACTIVOS FIJOS - </a>  -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item dropdown">
+          <button class="dropbtn">Usuarios</button>
+          <div class="dropdown-content">
+            <a href="/cargarpdf">Cargar Poder</a>
+            <a href="/ver-pdf">Ver Poder</a>
+            <a href="/usuariosreset">Resetear Contraseña</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/ingpreguntas">Preguntas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/opc2">Votos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="dropbtn">Configuración</button>
+          <div class="dropdown-content">
+            <a href="/maeprop">Tipo Propiedad</a>
+            <a href="/documentos">Documentos Asamblea</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+</nav>
+
+<!--
+<script>
+  <span id="year"></span>
+  document.getElementById('year').textContent = '  ' + new Date().getFullYear();
+</script>
+-->
