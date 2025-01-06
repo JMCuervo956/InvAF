@@ -1,10 +1,12 @@
-import express from 'express';
-import path from 'path';
-import session from 'express-session';
+import express, { Router } from 'express';		
+import session from 'express-session';		
+import mysql from 'mysql2/promise'; // Cambiado para usar mysql2 con promesas		
 import { fileURLToPath } from 'url';	
 import crypto from 'crypto';
 import { pool } from './db.js';		
-import { PORT } from './config.js';	
+import { PORT } from './config.js';		
+import path from 'path';		
+
 import bcryptjs from 'bcryptjs';		
 
 const app = express();
