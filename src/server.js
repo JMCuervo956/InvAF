@@ -159,7 +159,7 @@ app.post('/auth', async (req, res) => {
 
 
 // Configurar el puerto en el que el servidor escucha
-const PORT = process.env.PORT || 3000;
+//const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
