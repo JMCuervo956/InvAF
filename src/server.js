@@ -4,6 +4,7 @@ import session from 'express-session';
 import { fileURLToPath } from 'url';	
 import crypto from 'crypto';
 import { pool } from './db.js';		
+import { PORT } from './config.js';	
 import bcryptjs from 'bcryptjs';		
 
 const app = express();
