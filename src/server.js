@@ -32,7 +32,7 @@ app.use(session({
 
 // Ruta principal para mostrar el formulario
 app.get('/', (req, res) => {
-  res.render('index');  // Muestra el formulario de login
+  res.render('inventarios');  // Muestra el formulario de login
 });
 
 // Ruta del menú (solo accesible si el usuario está autenticado)

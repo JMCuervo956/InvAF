@@ -1,5 +1,5 @@
-import {createPool} from 'mysql2';
 import mysql from 'mysql2/promise';
+import {createPool} from 'mysql2';
 import {
     DB_HOST,
     DB_NAME,
