@@ -65,6 +65,9 @@ app.get('/inventarios', (req, res)=>{
 
 app.post('/inventarios', async (req, res) => {
   try {
+      // En db.js o en cualquier parte donde estés realizando la conexión:
+      console.log('Conectando a la base de datos con estos valores:');
+      console.log(`Host: ${DB_HOST}, User: ${DB_USER}, DB: ${DB_NAME}, Port: ${DB_PORT}`);
       const { CodActivo, DesGen, DesAct, observ, Estado, Propio } = req.body;
 
 //        if (!CodActivo || !DesGen || !DesAct || !observ || !Estado || !Propio) {
